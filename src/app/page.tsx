@@ -1,17 +1,19 @@
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Hero from './components/Hero';
-import FeaturedModels from './components/FeaturedModels';
-import BrandIntro from './components/BrandIntro';
+"use client";
+
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import FeaturedModels from "./components/FeaturedModels";
+import BrandIntro from "./components/BrandIntro";
 
 export default function Home() {
   return (
-    <>
+    <div className="bg-white text-gray-900">
       <Navbar />
-      <Hero />
-      <FeaturedModels />
-      <BrandIntro />
+        <Hero />
+        <FeaturedModels />
+        <BrandIntro />
       <Footer />
-    </>
+    </div>
   );
 }
